@@ -14,8 +14,8 @@ Got to cloned folder >React and Install all the dependencies
 
 All the node dependencies will be installed
 
-npm run server
+In order to Run the App Type below code in terminal
 
-this Start the app
+	npm run server
 
-App will open at https://localhost:8080
+	App will open at https://localhost:8080
