@@ -1,0 +1,28 @@
+{
+  "name": "react-basic-app",
+  "version": "1.0.0",
+  "description": "Basic React app project settings is done. you can start writing code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js --ignore app/components"
+  },
+  "author": "Nikhith Jadav",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "express": "^4.14.0",
+    "install": "^0.8.4",
+    "nodemon": "^1.11.0",
+    "npm": "^4.1.1",
+    "path": "^0.12.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.15.0"
+  }
+}
