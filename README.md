@@ -6,7 +6,7 @@ Clone the repository to your local machine.
 
 	Go to Terminal and paste below code and enter
 
-	git clone https://github.com/nikith050/React.git
+	git clone https://github.com/nikith050/react-basic-app.git
 
 Got to cloned folder >React and Install all the dependencies
 
