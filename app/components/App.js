@@ -10,7 +10,7 @@ class App extends Component {
 		return (	
 			<Router history={browserHistory}>
 				<Route path='/' component={Home} />
-				<Route path='/about' component={About} />
+				<Route path='/:shopId' component={About} />
 			</Router>
 		)
 	}
