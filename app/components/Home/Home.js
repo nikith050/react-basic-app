@@ -1,15 +1,22 @@
-import React, {Component} from 'react'
+import React, {Component, cloneElement} from 'react'
 import {Link} from 'react-router'
+import {MuiThemeProvider} from 'material-ui'
+
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 class Home extends Component {
 
 	render() {
 		return (
 			<div>
-				<img src={require('../../images/home.jpeg')} width="100"/>
-				<h1 className="text-ceter">You are in home apge</h1>
-				<p>Edit /css/style.css file for styles and use </p>
-				<Link to='/about'>About</Link>
+				<MuiThemeProvider>
+					<Header />
+				</MuiThemeProvider>
+					{cloneElement(this.props.children, this.props)}
+				<MuiThemeProvider>
+					<Footer />
+				</MuiThemeProvider>
 			</div>
 		)
 	}
