@@ -25,7 +25,7 @@
     "nodemon": "^1.11.0",
     "npm": "^4.1.1",
     "path": "^0.12.7",
-    "react": "^15.4.2",
+    "react": "^15.6.1",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.2",
     "react-spark-scroll": "^2.0.3",

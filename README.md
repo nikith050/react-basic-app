@@ -33,3 +33,5 @@ In case if you get error somthing like this in your terminal
 This can be remedied by installing the newest version of libpng with homebrew:
 	
 	brew install libpng
+
+[![CircleCI](https://circleci.com/gh/nikith050/react-basic-app.svg?style=svg)](https://circleci.com/gh/nikith050/react-basic-app)
