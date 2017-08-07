@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {Link} from 'react-router'
 
 export default class NavBar extends Component {
 
@@ -7,28 +8,30 @@ export default class NavBar extends Component {
 	  	super(props);
 	
 	  	this.state = {
-	  		category: []
+	  		menu: []
 	  	};
 	}
 
 	componentWillMount() {
-		axios.get('http://test.moifash.com/webshop/get_all_category/'+this.props.shopName).then((res) => {
-			console.log('res.data', res.data);
-			this.setState({category: res.data})
-		})
+		// axios.get('http://test.moifash.com/webshop/get_all_menu/'+this.props.shopName).then((res) => {
+		// 	console.log('res.data', res.data);
+		// 	this.setState({menu: res.data})
+		// })
+		var menu = ["home", "about", "blog"]
+		this.setState({menu: menu})
 	}
 
 	getProducts(id) {
-		this.props.getProducts(id)
+		// this.props.getProducts(id)
 	}
 
 	render() {
 		return(
 			<div className="text-center">
 				<ul className="navbar">
-					{
-						this.state.category.map((cat, i) => {return <li key={i} onClick={this.getProducts.bind(this, cat.id)}>{cat.displayName}</li>})
-					}
+					<Link style={{color: '#ffffff', padding: '10px'}} to='/'>Home</Link>
+					<Link style={{color: '#ffffff', padding: '10px'}} to='/about'>About</Link>
+					<Link style={{color: '#ffffff', padding: '10px'}} to='/blog'>Blog</Link>
 				</ul>
 			</div>
 		)
